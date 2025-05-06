@@ -123,6 +123,17 @@ data
 - [X] Release the data preparation code
 - [ ] Release the training and evaluation code, and our pretrained model
 
+## Citation
+If you find this project useful for your research, please consider citing:
+```
+@article{qi2025lrfusionpr,
+  title={LRFusionPR: A Polar BEV-Based LiDAR-Radar Fusion Network for Place Recognition},
+  author={Qi, Zhangshuo and Cheng, Luqi and Zhou, Zijie and Xiong, Guangming},
+  journal={arXiv preprint arXiv:2504.19186},
+  year={2025}
+}
+```
+
 ## Acknowledgement
 Many thanks to these excellent projects:
 * [LCPR](https://github.com/ZhouZijie77/LCPR)
