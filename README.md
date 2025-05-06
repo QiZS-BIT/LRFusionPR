@@ -136,6 +136,7 @@ If you find this project useful for your research, please consider citing:
 
 ## Acknowledgement
 Many thanks to these excellent projects:
+* [BEVPlace](https://github.com/zjuluolun/BEVPlace2)
 * [LCPR](https://github.com/ZhouZijie77/LCPR)
 * [AutoPlace](https://github.com/ramdrop/autoplace)
 * [EgoNN](https://github.com/jac99/Egonn)
