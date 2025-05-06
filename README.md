@@ -73,11 +73,23 @@ python gen_bev.py
 * The final data structure should be like:
 ```
 data
-├── oxford_infos-2019-01-11-13-24-51.pkl
-├── oxford_infos-2019-01-11-13-24-51_whole.npy
-├── oxford_infos-2019-01-11-13-24-51_db.npy
-├── oxford_infos-2019-01-11-13-24-51_test_query.npy
-└── oxford_infos-01-11-13-24-51_bev
+├── dcc_multi_bev
+├── dcc_test_db.npy
+├── dcc_test_query.npy
+├── dcc_whole.npy
+├── mulran_infos-dcc.pkl
+├── mulran_infos-riverside.pkl
+├── mulran_infos-sejong.pkl
+├── riverside_multi_bev
+├── riverside_test_db.npy
+├── riverside_test_query.npy
+├── riverside_whole.npy
+├── sejong_db.npy
+├── sejong_multi_bev
+├── sejong_test_db.npy
+├── sejong_test_query.npy
+├── sejong_train_query.npy
+└── sejong_whole.npy
 ```
 * To generate data for simulated foggy conditions, you need to run the 
 following script provided by SeeingThroughFog:
@@ -99,38 +111,11 @@ python gen_bev.py
 * The final data structure should be like:
 ```
 data
-├── bs_bev
-├── bs_db.npy
-├── bs_test_query.npy
-├── bs_train_query.npy
-├── dcc_multi_bev
-├── dcc_test_db.npy
-├── dcc_test_query.npy
-├── dcc_whole.npy
-├── mulran_infos-dcc.pkl
-├── mulran_infos-riverside.pkl
-├── mulran_infos-sejong.pkl
-├── nuscenes_infos-bs.pkl
-├── nuscenes_infos-son.pkl
-├── nuscenes_infos-sq.pkl
-├── riverside_multi_bev
-├── riverside_test_db.npy
-├── riverside_test_query.npy
-├── riverside_whole.npy
-├── sejong_db.npy
-├── sejong_multi_bev
-├── sejong_test_db.npy
-├── sejong_test_query.npy
-├── sejong_train_query.npy
-├── sejong_whole.npy
-├── son_bev
-├── son_db.npy
-├── son_test_query.npy
-├── son_whole.npy
-├── sq_bev
-├── sq_db.npy
-├── sq_test_query.npy
-└── sq_whole.npy
+├── oxford_infos-2019-01-11-13-24-51.pkl
+├── oxford_infos-2019-01-11-13-24-51_whole.npy
+├── oxford_infos-2019-01-11-13-24-51_db.npy
+├── oxford_infos-2019-01-11-13-24-51_test_query.npy
+└── oxford_infos-01-11-13-24-51_bev
 ```
 
 ## TODO
