@@ -1,6 +1,7 @@
 # LRFusionPR
-The official implementation for our paper LRFusionPR [[arxiv]](https://arxiv.org/abs/2504.19186).
+This repository is the official implementation of our paper accepted by IEEE RAL [[arxiv]](https://arxiv.org/abs/2504.19186).
 
+## Introduction
 **LRFusionPR: A Polar BEV-Based LiDAR-Radar Fusion Network for Place Recognition**
 
 [Zhangshuo Qi](https://github.com/QiZS-BIT), [Luqi Cheng](https://github.com/ChengLuqi), [Zijie Zhou](https://github.com/ZhouZijie77), [Guangming Xiong*](https://ieeexplore.ieee.org/author/37286205000)
@@ -10,6 +11,17 @@ The official implementation for our paper LRFusionPR [[arxiv]](https://arxiv.org
 LRFusionPR improves recognition accuracy and robustness by fusing LiDAR with either single-chip or scanning radar.
 Extensive evaluations on multiple datasets demonstrate that our LRFusionPR achieves accurate place recognition, while 
 maintaining robustness under varying weather conditions.
+
+## Table of Contents
+- [LRFusionPR](#LRFusionPR)
+    - [Introduction](#introduction)
+    - [Installation](#installation)
+    - [Data Preparation](#data-preparation)
+    - [Training](#training)
+    - [Evaluation](#evaluation)
+    - [Download](#download)
+    - [Citation](#citation)
+    - [Acknowledgement](#acknowledgement)
 
 ## Installation
 * Ubuntu 20.04 + Python 3.8
@@ -118,10 +130,62 @@ data
 └── oxford_infos-01-11-13-24-51_bev
 ```
 
+## Training
+To train the model from scratch, you first need to modify ``config/params_nusc.py``. There are three main changes to pay attention to:
+
+* Ensure that the file paths used for training are kept, while other file paths are commented out.
+
+* Set ``self.checkpoint_path = ""`` and configure ``self.resume_checkpoint = False``.
+
+* Set ``self.training_root`` to the desired path for storing training files.
+
+Then, run the following script to train the model:
+```
+python train_nusc.py
+```
+
+For training on the MulRan dataset, similar modifications need to be applied to the ``config/params_mulran.py`` file.
+
+Then, run the following script to train the model:
+```
+python train_mulran.py
+```
+
+## Evaluation
+You can either evaluate our provided pre-trained weights, or evaluate results obtained from training locally.
+
+First, ensure that in ``config/params_nusc.py``/``config/params_mulran.py``/``config/params_oxford.py``, the file paths 
+used for evaluating specific sequences are kept, while other file paths are commented out.
+
+Then proceed with one of the following options:
+
+**Option 1: Evaluate Pre-trained Weights**
+
+* Set ``self.checkpoint_path`` to the path of our provided pre-trained weights.
+
+**Option 2: Evaluate Locally Trained Results**
+
+* Set self.checkpoint_path = ""
+
+* Set ``self.training_root`` to the folder where training results are stored.
+
+* Set ``self.resume_epoch`` to the epoch corresponding to the weights you want to evaluate.
+
+After setting ``self.resume_checkpoint = True``, run the following scripts depending on which dataset you want to evaluate:
+```
+python test_nusc.py
+python test_mulran.py
+python test_oxford.py
+```
+
+## Download
+* You can download our generated infos, indexes and BEVs from this [link]().
+* Our pre-trained weights are available at this [link]().
+
 ## TODO
 - [X] Release the [paper](https://arxiv.org/abs/2504.19186)
 - [X] Release the data preparation code
-- [ ] Release the training and evaluation code, and our pretrained model
+- [X] Release the training and evaluation code, and our pretrained model
 
 ## Citation
 If you find this project useful for your research, please consider citing:
