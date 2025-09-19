@@ -179,7 +179,7 @@ python test_oxford.py
 ```
 
 ## Download
-* You can download our generated infos, indexes and BEVs from this [link]().
+* You can download our generated infos, indexes and BEVs from this [link](https://drive.google.com/file/d/1kJVL1ZRyja3QH-9-8onnFwRsOYdMZoxT/view?usp=sharing).
 * Our pre-trained weights are available at this [link](https://drive.google.com/file/d/1-A48nmG6mmu80mA2g6B4N36L0fOJ8aW3/view?usp=sharing).
 
 ## TODO
