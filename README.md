@@ -1,5 +1,5 @@
 # LRFusionPR
-This repository is the official implementation of our paper accepted by IEEE RAL [[arxiv]](https://arxiv.org/abs/2504.19186).
+This repository is the official implementation of our paper accepted by IEEE RAL [[IEEE Xplore]](https://ieeexplore.ieee.org/document/11177016) [[arxiv]](https://arxiv.org/abs/2504.19186).
 
 ## Introduction
 **LRFusionPR: A Polar BEV-Based LiDAR-Radar Fusion Network for Place Recognition**
