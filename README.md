@@ -190,12 +190,15 @@ python test_oxford.py
 ## Citation
 If you find this project useful for your research, please consider citing:
 ```
-@article{qi2025lrfusionpr,
-  title={LRFusionPR: A Polar BEV-Based LiDAR-Radar Fusion Network for Place Recognition},
+@ARTICLE{qi2025lrfusionpr,
   author={Qi, Zhangshuo and Cheng, Luqi and Zhou, Zijie and Xiong, Guangming},
-  journal={arXiv preprint arXiv:2504.19186},
-  year={2025}
-}
+  journal={IEEE Robotics and Automation Letters}, 
+  title={LRFusionPR: A Polar BEV-Based LiDAR-Radar Fusion Network for Place Recognition}, 
+  year={2025},
+  volume={10},
+  number={11},
+  pages={11784-11791},
+  doi={10.1109/LRA.2025.3614062}}
 ```
 
 ## Acknowledgement
